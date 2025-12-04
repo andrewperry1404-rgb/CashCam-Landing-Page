@@ -2,6 +2,7 @@ import React from 'react';
 import { Smartphone, Download, Star, ArrowRight, ShieldCheck, Camera, Menu, X, Zap, DollarSign, CheckCircle, Wifi, Signal } from 'lucide-react';
 import { HERO_COPY, PAIN_POINTS, FEATURES, TEEN_HUSTLE_COPY, SOCIAL_PROOF, STEPS, FINAL_CTA } from './constants';
 import PasswordProtection from './PasswordProtection';
+import WaitlistModal from './WaitlistModal';
 
 // Separate component to isolate re-renders from the main App
 const StatusBarTime = () => {
@@ -31,6 +32,9 @@ const StatusBarTime = () => {
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [isWaitlistOpen, setIsWaitlistOpen] = React.useState(false);
+
+  const openWaitlist = () => setIsWaitlistOpen(true);
 
   return (
     <PasswordProtection>
@@ -64,7 +68,7 @@ const App = () => {
                 <a href="#features" className="text-sm font-medium text-slate-400 hover:text-brand-primary transition-colors">Features</a>
                 <a href="#how-it-works" className="text-sm font-medium text-slate-400 hover:text-brand-primary transition-colors">How it Works</a>
                 <a href="#stories" className="text-sm font-medium text-slate-400 hover:text-brand-primary transition-colors">Stories</a>
-                <button className="bg-brand-primary text-brand-dark px-5 py-2 rounded-full font-bold text-sm hover:bg-emerald-400 transition-all transform hover:scale-105 shadow-lg shadow-emerald-900/20">
+                <button onClick={openWaitlist} className="bg-brand-primary text-brand-dark px-5 py-2 rounded-full font-bold text-sm hover:bg-emerald-400 transition-all transform hover:scale-105 shadow-lg shadow-emerald-900/20">
                   Join Waitlist
                 </button>
               </div>
@@ -117,8 +121,8 @@ const App = () => {
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-                  <button className="w-full sm:w-auto bg-brand-primary text-brand-dark px-8 py-4 rounded-xl font-bold text-lg hover:bg-emerald-400 transition-all transform hover:scale-105 flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(16,185,129,0.3)] active:scale-95">
-                    <Download className="w-5 h-5" />
+                  <button onClick={openWaitlist} className="w-full sm:w-auto bg-brand-primary text-brand-dark px-8 py-4 rounded-xl font-bold text-lg hover:bg-emerald-400 transition-all transform hover:scale-105 flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(16,185,129,0.3)] active:scale-95">
+                    <ArrowRight className="w-5 h-5" />
                     {HERO_COPY.cta}
                   </button>
                   <div className="flex flex-col items-center sm:items-start">
@@ -401,7 +405,7 @@ const App = () => {
               {FINAL_CTA.subheadline}
             </p>
             <div className="flex flex-col items-center gap-6">
-              <button className="bg-brand-primary text-brand-dark px-10 py-5 rounded-2xl font-black text-xl hover:bg-emerald-400 transition-all transform hover:scale-105 shadow-[0_0_40px_rgba(16,185,129,0.4)]">
+              <button onClick={openWaitlist} className="bg-brand-primary text-brand-dark px-10 py-5 rounded-2xl font-black text-xl hover:bg-emerald-400 transition-all transform hover:scale-105 shadow-[0_0_40px_rgba(16,185,129,0.4)]">
                 {FINAL_CTA.button}
               </button>
               <p className="text-slate-400 text-sm flex items-center gap-2">
@@ -441,10 +445,12 @@ const App = () => {
                 <a href="#" className="text-slate-500 hover:text-white transition-colors">Privacy</a>
                 <a href="#" className="text-slate-500 hover:text-white transition-colors">Terms</a>
                 <a href="#" className="text-slate-500 hover:text-white transition-colors">Contact</a>
+
               </div>
             </div>
           </div>
         </footer>
+        <WaitlistModal isOpen={isWaitlistOpen} onClose={() => setIsWaitlistOpen(false)} />
       </div>
     </PasswordProtection>
   );
