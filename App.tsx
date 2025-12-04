@@ -65,7 +65,7 @@ const App = () => {
                 <a href="#how-it-works" className="text-sm font-medium text-slate-400 hover:text-brand-primary transition-colors">How it Works</a>
                 <a href="#stories" className="text-sm font-medium text-slate-400 hover:text-brand-primary transition-colors">Stories</a>
                 <button className="bg-brand-primary text-brand-dark px-5 py-2 rounded-full font-bold text-sm hover:bg-emerald-400 transition-all transform hover:scale-105 shadow-lg shadow-emerald-900/20">
-                  Download App
+                  Join Waitlist
                 </button>
               </div>
 

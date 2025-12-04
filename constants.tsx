@@ -4,7 +4,7 @@ import React from 'react';
 export const HERO_COPY = {
   headline: "Stop Guessing. Start Flipping. Your Phone Is Now An ATM.",
   subheadline: "Turn clutter into cash with instant appraisals, sell-through rate analysis, AI listings and more. Know the real price and sell with confidence.",
-  cta: "Download CashCam",
+  cta: "Join Waitlist",
 };
 
 export const PAIN_POINTS = [
@@ -101,6 +101,6 @@ export const STEPS = [
 export const FINAL_CTA = {
   headline: "The Market Doesn't Wait. Why Should You?",
   subheadline: "Join the early access wave. The highest rewards go to the fastest sellers.",
-  button: "Download CashCam",
-  risk_reversal: "100% Free to Download. No Payment Required."
+  button: "Join Waitlist",
+  risk_reversal: "100% Free to Join. No Payment Required."
 };
