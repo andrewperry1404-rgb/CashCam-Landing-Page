@@ -126,7 +126,7 @@ const App = () => {
                     {HERO_COPY.cta}
                   </button>
                   <div className="flex flex-col items-center sm:items-start">
-                    <div className="text-xs text-slate-500 font-medium mb-1">Available on iOS & Android</div>
+                    <div className="text-xs text-slate-500 font-medium mb-1">Available on iOS and Android</div>
                     <div className="flex gap-1">
                       {[...Array(5)].map((_, i) => <Star key={i} className="w-3 h-3 fill-brand-primary text-brand-primary" />)}
                     </div>
@@ -288,7 +288,7 @@ const App = () => {
                 The Operating System for <span className="text-brand-primary">Sellers</span>
               </h2>
               <p className="text-xl text-slate-400 max-w-2xl mx-auto">
-                How CashCam provides everything you need to scale from hobbyist to powerhouse in one app.
+                CashCam provides everything you need to scale from hobbyist to powerhouse in one app.
               </p>
             </div>
 
