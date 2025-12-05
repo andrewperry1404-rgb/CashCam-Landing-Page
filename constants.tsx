@@ -1,4 +1,4 @@
-import { Smartphone, Zap, Search, Users, TrendingUp, DollarSign, Clock, AlertTriangle, CheckCircle, Camera, ArrowRight, Star } from 'lucide-react';
+import { Smartphone, Zap, Search, Users, TrendingUp, DollarSign, Clock, AlertTriangle, CheckCircle, Camera, ArrowRight, Star, MessageCircleQuestion } from 'lucide-react';
 import React from 'react';
 
 export const HERO_COPY = {
@@ -10,7 +10,7 @@ export const HERO_COPY = {
 export const PAIN_POINTS = [
   {
     id: 1,
-    icon: <Search className="w-8 h-8 text-red-400" />,
+    icon: <MessageCircleQuestion className="w-8 h-8 text-red-400" />,
     title: "Is this even worth selling?",
     description: "You're standing in the thrift store aisle, frozen. Indecisiveness and pricing uncertainty creates hesitation, and hesitation kills profit. Don't gamble on pricing that disappoints.",
   },
