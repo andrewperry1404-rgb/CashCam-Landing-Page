@@ -9,6 +9,7 @@ export const ThreeQuestionMarks = ({ className, ...props }: React.SVGProps<SVGSV
         strokeLinecap="round"
         strokeLinejoin="round"
         className={className}
+        style={{ overflow: 'visible' }}
         {...props}
     >
         <g transform="translate(12, 12) scale(0.75) translate(-12, -12)">
