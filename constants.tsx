@@ -1,4 +1,4 @@
-import { Smartphone, Zap, Search, Users, TrendingUp, DollarSign, Clock, AlertTriangle, CheckCircle, Camera, ArrowRight, Star, MessageCircleQuestion } from 'lucide-react';
+import { Smartphone, Zap, Search, Users, TrendingUp, DollarSign, Clock, AlertTriangle, CheckCircle, Camera, ArrowRight, Star, MessageCircleQuestion, ClipboardList } from 'lucide-react';
 import React from 'react';
 import { ThreeQuestionMarks } from './CustomIcons';
 
@@ -23,7 +23,7 @@ export const PAIN_POINTS = [
   },
   {
     id: 3,
-    icon: <TrendingUp className="w-8 h-8 text-orange-400" />,
+    icon: <ClipboardList className="w-8 h-8 text-orange-400" />,
     title: "Listing takes forever",
     description: "Photos, titles, descriptions, specs, etc. The hassle of listing causes 'Death Pile Accumulation', resulting in unrealised opportunity simply due to people not having enough time to work on selling their items.",
   }
