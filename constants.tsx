@@ -1,6 +1,6 @@
 import { Smartphone, Zap, Search, Users, TrendingUp, DollarSign, Clock, AlertTriangle, CheckCircle, Camera, ArrowRight, Star, MessageCircleQuestion, ClipboardList, Link } from 'lucide-react';
 import React from 'react';
-import { ThreeQuestionMarks } from './CustomIcons';
+import { ThreeQuestionMarks, TrafficLightIcon } from './CustomIcons';
 
 export const HERO_COPY = {
   headline: "Stop Guessing. Start Flipping. Your Phone Is Now An ATM.",
@@ -43,7 +43,7 @@ export const FEATURES = [
     title: "Liquidity Score Traffic Light",
     benefit: "Sell Smart, Not Stuck",
     description: "Stop guessing if an item will move. Our visual Sell-Through Rate (STR) calculator gives you a Red, Yellow, or Green light immediately. Green means it flies off the shelf; Red means it won't.",
-    icon: <Zap className="w-6 h-6" />,
+    icon: <TrafficLightIcon className="w-6 h-6" />,
     color: "bg-yellow-500/10 text-yellow-400",
   },
   {
