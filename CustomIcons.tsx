@@ -45,9 +45,9 @@ export const TrafficLightIcon = ({ className, ...props }: React.SVGProps<SVGSVGE
         className={className}
         {...props}
     >
-        <rect x="7" y="2" width="10" height="20" rx="5" />
-        <circle cx="12" cy="7" r="2" />
-        <circle cx="12" cy="12" r="2" />
-        <circle cx="12" cy="17" r="2" />
+        <rect x="5" y="2" width="14" height="20" rx="2" strokeWidth="2.5" />
+        <circle cx="12" cy="7" r="2.5" strokeWidth="2.5" />
+        <circle cx="12" cy="12" r="2.5" strokeWidth="2.5" />
+        <circle cx="12" cy="17" r="2.5" strokeWidth="2.5" />
     </svg>
 );
