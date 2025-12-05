@@ -1,4 +1,4 @@
-import { Smartphone, Zap, Search, Users, TrendingUp, DollarSign, Clock, AlertTriangle, CheckCircle, Camera, ArrowRight, Star, MessageCircleQuestion, ClipboardList } from 'lucide-react';
+import { Smartphone, Zap, Search, Users, TrendingUp, DollarSign, Clock, AlertTriangle, CheckCircle, Camera, ArrowRight, Star, MessageCircleQuestion, ClipboardList, Link } from 'lucide-react';
 import React from 'react';
 import { ThreeQuestionMarks } from './CustomIcons';
 
@@ -59,7 +59,7 @@ export const FEATURES = [
     title: "Cross-Platform Bridge",
     benefit: "Sell Everywhere",
     description: "One-tap copy and deep link. CashCam copies your listing and opens the marketplace app instantly. Just paste and you're live in seconds.",
-    icon: <Users className="w-6 h-6" />,
+    icon: <Link className="w-6 h-6" />,
     color: "bg-indigo-500/10 text-indigo-400",
   }
 ];
